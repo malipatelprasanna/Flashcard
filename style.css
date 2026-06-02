@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.card {
+  background: #f8f9ff;
+  border-radius: 15px;
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+#question {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+#answer {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+#showBtn {
+  background: #6c63ff;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#prevBtn {
+  background: #ff9800;
+  color: white;
+}
+
+#nextBtn {
+  background: #4caf50;
+  color: white;
+}
+
+.form-section {
+  background: #f3f4ff;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.form-section h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#addBtn {
+  background: #2196f3;
+  color: white;
+}
+
+#editBtn {
+  background: #9c27b0;
+  color: white;
+}
+
+#deleteBtn {
+  background: #f44336;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .navigation,
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
